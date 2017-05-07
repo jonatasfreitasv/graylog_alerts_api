@@ -1,0 +1,84 @@
+{
+  "check_result": {
+    "result_description": "Stream had 636 messages in the last 1 minutes with trigger condition more than 10 messages. (Current grace time: 1 minutes)",
+    "triggered_condition": {
+      "id": "14e63000-43f1-408d-91a4-a994bfac89b8",
+      "type": "message_count",
+      "created_at": "2017-05-07T05:31:27.357Z",
+      "creator_user_id": "admin",
+      "title": "test",
+      "parameters": {
+        "grace": 1,
+        "threshold_type": "more",
+        "threshold": 10,
+        "time": 1,
+        "backlog": 1
+      }
+    },
+    "triggered_at": "2017-05-07T05:47:51.842Z",
+    "triggered": true,
+    "matching_messages": [
+      {
+        "index": "graylog_1",
+        "message": "{'full_message': [{'Lon': '-35.201187', 'Lat': '-5.805216', 'DateTime': '2017-05-07T02:44:21', 'id_rastreador': 4234656, 'Course': 0, 'Sirene': 0, 'GpsSatNumber': 4, 'version': 4, 'RealTime': 0, 'Distance': '43511222', 'Panico': 0, 'Speed': 0, 'Ignicao': 'Desligado', 'Tensao': '12', 'Bloqueio': 0}], 'timestamp': 1494136070.673741, 'short_message': 'positions get', 'ec2_id': b'i-05e176e74b8e5cb4e', 'version': '1.0', 'host': 'EngineProcess Cluster'}",
+        "timestamp": "2017-05-07T05:47:50.674Z",
+        "fields": {
+          "file": "/home/ubuntu/engine_process_python/modules/logger.py",
+          "level": 6,
+          "full_message": "{'full_message': [{'Lon': '-35.201187', 'Lat': '-5.805216', 'DateTime': '2017-05-07T02:44:21', 'id_rastreador': 4234656, 'Course': 0, 'Sirene': 0, 'GpsSatNumber': 4, 'version': 4, 'RealTime': 0, 'Distance': '43511222', 'Panico': 0, 'Speed': 0, 'Ignicao': 'Desligado', 'Tensao': '12', 'Bloqueio': 0}], 'timestamp': 1494136070.673741, 'short_message': 'positions get', 'ec2_id': b'i-05e176e74b8e5cb4e', 'version': '1.0', 'host': 'EngineProcess Cluster'}",
+          "line": 43,
+          "thread_name": "MainThread",
+          "process_name": "MainProcess",
+          "function": "info",
+          "pid": 2836,
+          "gl2_source_node": "c37e41b7-0b7b-43ea-b10c-c29ecfc0e0f1",
+          "gl2_source_input": "5908d4782ab79c0001316433",
+          "facility": "engine_process"
+        },
+        "id": "b4fa1820-32e8-11e7-98de-0242ac120004",
+        "source": "ip-172-31-2-10",
+        "stream_ids": [
+          "5908d7a22ab79c0001316793"
+        ]
+      }
+    ]
+  },
+  "stream": {
+    "creator_user_id": "admin",
+    "outputs": [],
+    "matching_type": "AND",
+    "description": "Engine Process Stream",
+    "created_at": "2017-05-02T19:01:54.878Z",
+    "disabled": false,
+    "rules": [
+      {
+        "field": "facility",
+        "stream_id": "5908d7a22ab79c0001316793",
+        "description": "",
+        "id": "5908d7ba2ab79c00013167ad",
+        "type": 1,
+        "inverted": false,
+        "value": "engine_process"
+      }
+    ],
+    "alert_conditions": [
+      {
+        "creator_user_id": "admin",
+        "created_at": "2017-05-07T05:31:27.357Z",
+        "id": "14e63000-43f1-408d-91a4-a994bfac89b8",
+        "type": "message_count",
+        "title": "test",
+        "parameters": {
+          "grace": 1,
+          "threshold_type": "more",
+          "threshold": 10,
+          "time": 1,
+          "backlog": 1
+        }
+      }
+    ],
+    "id": "5908d7a22ab79c0001316793",
+    "title": "Engine Process",
+    "content_pack": null
+  }
+}

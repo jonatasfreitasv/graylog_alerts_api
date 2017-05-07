@@ -1,0 +1,16 @@
+{
+  "name": "graylog_alerts_api",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node main.js"
+  },
+  "author": "Jonatas Freitas <jonatasfreitasv@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "pushover-notifications": "^0.2.4",
+    "restify": "^4.3.0"
+  }
+}
