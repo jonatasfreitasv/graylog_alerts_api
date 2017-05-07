@@ -10,7 +10,7 @@
   "author": "Jonatas Freitas <jonatasfreitasv@gmail.com>",
   "license": "ISC",
   "dependencies": {
-    "pushover-notifications": "^0.2.4",
+    "node-pushover": "^0.2.2",
     "restify": "^4.3.0"
   }
 }
